@@ -14,26 +14,9 @@
  *= require_self
  */
 
-/* Language: css */
-/* Navbar css with a centered reach bar */
-.navbar {
-  background-color: #6affcd;
-  border: 0;
-  font-size: 12px !important;
-  letter-spacing: 4px;
-  opacity: 0.9;
-}
-
-.navbar li a, .navbar .navbar-brand {
-  color: #fff !important;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #f4511e !important;
-  background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }

@@ -1,7 +1,7 @@
 # 🎓 College Search 🎓
 #### A web app to help students search for colleges near them
 
-##  See the Site in action [here](https://https://college.malphrus.tech) 🚀
+##  See the Site in action [here](https://college.malphrus.tech) 🚀
 
 ## 💻 Technical Details
 

@@ -18,13 +18,7 @@ module HomeHelper
     data[:results]
   end
 
-
   def map?
     params[:search].present?
-  end
-
-
-  def test
-    "hola mundo"
   end
 end

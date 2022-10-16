@@ -24,5 +24,11 @@ COPY . .
 RUN npm i && npm run build
 
 
+#EXPOSE 80
+#CMD ["rails", "server", "-p", "80", "-b", "0.0.0.0"]
+
+RUN echo k8s
 EXPOSE 80
-CMD ["rails", "server", "-p", "80", "-b", "0.0.0.0"]
+RUN DB_ADAPTER=nulldb /app/bin/bundle
+RUN chmod +x /app/bin/start-pod.sh
+CMD /app/bin/start-pod.sh

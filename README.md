@@ -1,24 +1,46 @@
-# README
+# 🎓 College Search 🎓
+#### A web app to help students search for colleges near them
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##  See the Site in action [here](https://https://college.malphrus.tech//) 🚀
 
-Things you may want to cover:
+## 💻 Technical Details
 
-* Ruby version
+#### Deployment
 
-* System dependencies
+- Kubernetes Cluster on Linode (My personal lab)
+- Helm
+- Nginx Ingress Controller
+- LetsEncrypt Cert Manager
+- Kubernetes Secrets
+- Make
+- Docker
+- Docker Hub (prefer ECR for private repos)
 
-* Configuration
+#### Backend
 
-* Database creation
+- Ruby on Rails
 
-* Database initialization
+#### Frontend
 
-* How to run the test suite
+- Rails rendered ERB
+- Webpack for JS(vanilla)
+- Plain old css for styling
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🏃‍ Running the app
 
-* Deployment instructions
+#### Docker Compose
+1. Clone the repo
+2. Run `docker-compose up`
+3. Visit `localhost:3000` in your browser
 
-* ...
+#### Make
+1. clone the repo
+2. `make run` to build and run the app via docker-compose
+3. visit `localhost:3000` in your browser
+
+#### Local
+1. Clone the repo
+2. ensure webpack is installed globally (`npm install -g webpack`)
+3. Run `bundle && npm i && npm run build`
+4. Run `rails s`
+5. Visit `localhost:3000` in your browser

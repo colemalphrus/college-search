@@ -4,7 +4,7 @@
 </div>
 
 <!--html search form-->
-<form id="search" action="/" method="get" onsubmit="s()">
+<form id="search" action="/" method="get">
   <input class="search" type="text" name="search" placeholder="Search">
   <input class="submit" type="submit" value="Search">
 </form>
@@ -17,9 +17,6 @@
 ></script>
 <% if map? %>
   <script defer>
-      function s() {
-          console.log('s');
-      };
       setTimeout(function() {
           addMarkers(<%=raw schools.to_json %>);
       }, 200);

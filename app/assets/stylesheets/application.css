@@ -14,9 +14,56 @@
  *= require_self
  */
 
+body {
+  background-color: #6da2a2;
+  color: black;
+}
+
+.header {
+  background-color: #6da2a2;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+#search {
+  background-color: #6da2a2;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+#search:active {
+  background-color: #6da2a2;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.submit {
+  background-color: #6da2a2;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.search {
+    width: 30vw;
+    background-color: #6da2a2;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+
 #map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+    height: 75vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 95%;
+    color: black;
 }

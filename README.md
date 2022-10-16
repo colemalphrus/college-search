@@ -23,10 +23,24 @@
 #### Frontend
 
 - Rails rendered ERB
-- Webpack for JS(vanilla)
+- Webpack / JS(vanilla)
 - Plain old css for styling
 
+### 💡 Primary areas of interest
+
+- View implementation: `app/views/home/index.html.erb`
+- Controller implementation: `app/controllers/home_controller.rb`
+- Helper implementation: `app/helpers/home_helper.rb`
+- JS implementation: `app/javascript/application.js`
+- CSS implementation: `app/assets/stylesheets/application.css`
+- Helm Chart: `HelmCharts/`
+
 ## 🏃‍ Running the app
+
+#### Prerequisites
+1. Add the `API_KEY` from [ed.gov](https://collegescorecard.ed.gov/data/documentation/) to the a new .env file at the root of the project.
+2. Replace the `key` query param on line 15 of the `app/views/home/index.html.erb` file with your API key.
+    - This is due to restrictions i have placed on the on the API key being used in the browser.
 
 #### Docker Compose
 1. Clone the repo
